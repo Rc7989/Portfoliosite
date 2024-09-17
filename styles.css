@@ -271,7 +271,7 @@
   
   .cart {
     width: 100%;
-    height: 560px;
+    
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -297,6 +297,10 @@
     transform: translateY(-11px);
   }
   
+  .card span{
+    font-size: 50px;
+  }
+
   .card h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
@@ -390,11 +394,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 2000px;
+    height: 1000px;
     width: 90%;
     background-color: #56565618;
     border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.348);
     margin: auto auto;
     margin-top: 170px;
     padding-top: 100px;
@@ -476,7 +479,7 @@
     font-size: 14px;
   }
   
-  img:hover {
+  .avatar img:hover {
     transform: scale(1.06);
     transition: 0.3s ease-in-out;
   }
