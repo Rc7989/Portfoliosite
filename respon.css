@@ -134,4 +134,8 @@
         transform: translateX(-348px);
       }
     }
+
+    .card{
+      height: 285px;
+    }
   }
