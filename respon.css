@@ -131,7 +131,7 @@
         transform: translateX(0%);
       }
       100% {
-        transform: translateX(-75%);
+        transform: translateX(-348px);
       }
     }
   }
