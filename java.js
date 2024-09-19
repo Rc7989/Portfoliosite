@@ -46,3 +46,6 @@ const observery = new IntersectionObserver((entries) => {
 
 const hiddenElementsy = document.querySelectorAll(".hiddeny");
 hiddenElementsy.forEach((el) => observery.observe(el));
+
+
+

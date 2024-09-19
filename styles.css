@@ -271,7 +271,6 @@
   
   .cart {
     width: 100%;
-    
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -334,6 +333,7 @@
     overflow: hidden; /* Oculta a parte que está fora da div */
     margin: auto auto;
     margin-top: 70px;
+    margin-bottom: 300px;
   }
   
   .hidden {
@@ -390,26 +390,101 @@
   }
   
   
-  .projetos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 1000px;
+  .projetos{
     width: 90%;
-    background-color: #56565618;
-    border-radius: 30px;
-    margin: auto auto;
-    margin-top: 170px;
-    padding-top: 100px;
-    margin-bottom: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    text-align: center;
+}
+
+.div-pai {
+  display: flex;
+    position: relative; /* Para manter o contexto de posicionamento */
+    background-color: lightgray;
+    height: 230px; /* Altura suficiente para acomodar as divs filhas */
+    /*margin-bottom: 50px;  Espaçamento entre os blocos de div-pai */
+    width: 30%;
+    background-image: url(avatar/todolist.png);
+    background-position: center;
+    background-size: 420px;
+}
+
+.div-filha {
+    height: 100px;
+    width: 100px;
+}
+
+.primeira {
+    background-color: rgba(50, 50, 50, 0.419);
+    position: relative; /* Dentro da div-pai */
+    transition: opacity 0.3s;
+    width: 100%;
+    height: 98%;
+}
+
+
+
+.div-pai::before{
+  content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    bottom: 0rem;
+    background-image: linear-gradient(90deg, #4498d4 0%, #0e23e4 92.32%);
+}
+.segunda {
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    height: 31%;
+    position: absolute; /* Sai do fluxo do documento normal */
+     /* Mover para cima, para sobrepor a próxima div-pai */
+    border-radius: 0 0 20px 20px;
+    padding: 1.5rem 2rem 1.2rem 2rem;
+    z-index: 10; /* Pode ser um valor menor inicialmente */
+    opacity: 0;
+    bottom: 0px;
+    visibility: hidden;
+    transition: opacity 0.7s, visibility 0.7s;
+    text-align: left;
+}
+
+
+.div-pai:hover .segunda {
+    visibility: visible;
+    z-index: 20; /* Certifique-se de que este valor é alto o suficiente */
+    animation: down 0.5s linear forwards;
+}
+
+.div-pai:hover .primeira {
+    opacity: 0;
+}
+
+.segunda p{
+  color: white;
+}
+
+@keyframes down{
+  0%{
+    transform: translatey(50px);
   }
-  
-  .projetos > h3 {
-    position: relative;
-    color: white;
-    padding-top: 20px;
-    font-size: 30px;
+  100%{
+    transform: translatey(70px);
+    opacity: 1;
   }
+}
+
+@keyframes scall{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+
   
   /* Estilos para a barra de rolagem específica do WebKit */
   body::-webkit-scrollbar {
