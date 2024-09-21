@@ -211,27 +211,58 @@
     }
   }
   
-  .contact-btn {
+  .cvv{
+    top: 20px;
+    position: relative;
     display: flex;
-    display: inline-block;
-    text-align: center;
-    width: 33%;
-    font-weight: 400;
-    padding: 10px 0px;
-    margin-top: 17px;
-    color: white;
-    border-radius: 20px;
-    border: 2px solid rgba(44, 79, 255, 0.722);
-    text-decoration: none;
-    font-size: 14px;
+    gap: 25px;
+  }
+
+  .cvv a{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #F9F9F9;
+    padding: 0.7rem 1.5rem;
+    background-image: linear-gradient(90deg, rgba(92, 87, 230, 0.8) .2%, rgba(58, 48, 190, 0.648) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
     transition: 0.3s;
   }
   
-  .contact-btn:hover {
-    background: rgba(21, 45, 165, 0.722);
-    transform: scale(0.95);
+  .cvv a:nth-child(2){
+    background-image: none;
+    border: 1px solid #0e23e4;
   }
-  
+
+  .cvv a:nth-child(2):hover{
+    background-color: #08115c;
+    transform: scale(0.97);
+  }
+
+  .cvv a:nth-child(1):hover{
+    background-color: #3343d0;
+    transform: scale(0.97);
+  }
+
+  .div-filha{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+  }
+
+  .primeira{
+    gap: 20px;
+  }
+
+  .segunda{
+    justify-content: left;
+  }
+  .div-filha img{
+    width: 30px;
+  }
+
   .sobre {
     text-align: center;
     width: 90%;
@@ -328,7 +359,7 @@
   
   .carousel {
     text-align: center;
-    width: 443px; /* Largura da viewport */
+    width: 473px; /* Largura da viewport */
     height: 70px; /* Altura desejada */
     overflow: hidden; /* Oculta a parte que está fora da div */
     margin: auto auto;
@@ -374,10 +405,10 @@
   /* Definição da animação */
   @keyframes slider {
     0% {
-      transform: translateX(0%);
+      transform: translateX(0px);
     }
     100% {
-      transform: translateX(-79%);
+      transform: translateX(-421px);
     }
   }
 
@@ -400,16 +431,23 @@
 }
 
 .div-pai {
-  display: flex;
+    display: flex;
     position: relative; /* Para manter o contexto de posicionamento */
-    background-color: lightgray;
     height: 230px; /* Altura suficiente para acomodar as divs filhas */
-    /*margin-bottom: 50px;  Espaçamento entre os blocos de div-pai */
     width: 30%;
+    transition: 0.2s ease-in;
+}
+
+.div-pai:first-child{
     background-image: url(avatar/todolist.png);
     background-position: center;
     background-size: 420px;
-    transition: 0.2s ease-in;
+}
+
+.div-pai:nth-child(2){
+    background-image: url(avatar/todolistnode.png);
+    background-position:10% 0%;
+    background-size: 550px;
 }
 
 .div-filha {
@@ -418,7 +456,7 @@
 }
 
 .primeira {
-    background-color: rgba(50, 50, 50, 0.419);
+    background-color: rgba(0, 0, 0, 0.65);
     position: relative; /* Dentro da div-pai */
     transition: opacity 0.3s;
     width: 100%;

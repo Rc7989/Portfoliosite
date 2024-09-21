@@ -51,10 +51,9 @@
       font-size: 15px;
     }
   
-    .contact-btn {
-      width: 80%;
-      font-size: 14px;
-      font-weight: 700;
+    .cvv a {
+      font-size: 11px;
+      padding: 0.5rem 1.1rem;
     }
   
     .avatar img{
@@ -96,7 +95,19 @@
       text-align: center;
       justify-content: center;
     }
+
+    .cvv{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   
+    .cvv a{
+      width: 90%;
+      height: 40px;
+      padding: 0.7rem 1.5rem;
+      font-size: 16px;
+    }
+
     #headh {
       font-size: 36px;
     }
@@ -140,11 +151,13 @@
 
     @keyframes sliderr {
       0% {
-        transform: translateX(0%);
+        transform: translateX(0px);
       }
       100% {
-        transform: translateX(-348px);
+        transform: translateX(-420px);
       }
     }
-
+    .div-pai{
+      width: 97%;
+    }
   }
