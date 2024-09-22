@@ -450,6 +450,12 @@
     background-size: 550px;
 }
 
+.div-pai:nth-child(3){
+  background-image: url(avatar/primeitosite.png);
+  background-position:center;
+  background-size: 490px;
+}
+
 .div-filha {
     height: 100px;
     width: 100px;
