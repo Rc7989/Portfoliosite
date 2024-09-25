@@ -164,7 +164,7 @@
     width: 81%;
     transition: 0.3s linear;
   }
-
+  
   .ola h2,
   p,
   a {
@@ -174,7 +174,7 @@
   
   @keyframes slide {
     0% {
-      transform: translatex(-300px);
+      transform: translatex(-700px);
       opacity: 0;
     }
     100% {
@@ -263,25 +263,52 @@
     width: 30px;
   }
 
-  .sobre {
-    text-align: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    padding-top: 120px;
+  .sobmim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    animation: slide 1s ease-in-out;
   }
-  
-  .mim {
-    margin: auto auto;
-    width: 60%;
-    color: white;
+
+  .sobmim h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.2rem;
+    color: #F9F9F9;
+    font-weight: 600;
+  }
+
+  .sobmim p{
+    color: #828282;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 65%;
+    line-height: 160%;
   }
   
   p {
     color: #828282;
     line-height: 30px;
     font-size: 18px;
+  }
+
+  .div-pai a{
+    font-size: 16px;
+    border: 1px solid dodgerblue;
+    border-radius: 20px;
+    padding: 3px 12px;
+    transition: 2.5s;
+    cursor: pointer;
+  }
+  
+  @keyframes back {
+    0% {
+      background-color: none;
+    }
+    100% {
+      background-color: dodgerblue;
+    }
   }
   
   #dev {
@@ -482,6 +509,8 @@
     z-index: 100;
 }
 .segunda {
+  display: flex;
+  justify-content: space-between;
     background-color: rgb(34, 34, 34);
     width: 100%;
     height: 31%;
@@ -489,7 +518,6 @@
      /* Mover para cima, para sobrepor a próxima div-pai */
     border-radius: 0 0 20px 20px;
     padding: 1.5rem 2rem 1.2rem 2rem;
-     /* Pode ser um valor menor inicialmente */
     z-index: -10;
     opacity: 0;
     visibility: hidden;
@@ -500,6 +528,10 @@
 
 .div-pai:hover .segunda {
     animation: down 0.7s ease-in forwards;
+}
+
+.div-pai:hover  a  {
+  animation: back 1.2s 0.5s forwards;
 }
 
 .div-pai:hover .primeira {
