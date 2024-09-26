@@ -301,7 +301,24 @@
     transition: 2.5s;
     cursor: pointer;
   }
+
+  .fixed-center {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(5, 3, 15, 0.878);
+    color: white;
+    width: 1000px;
+    height: 550px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+  }
   
+ 
+
   @keyframes back {
     0% {
       background-color: none;
@@ -497,7 +514,6 @@
 }
 
 
-
 .div-pai::before{
   content: "";
     display: block;
@@ -531,7 +547,7 @@
 }
 
 .div-pai:hover  a  {
-  animation: back 1.2s 0.5s forwards;
+  animation: back 1.3s 0.8s forwards;
 }
 
 .div-pai:hover .primeira {
@@ -656,3 +672,89 @@
     transition: 0.3s ease-in-out;
   }
   
+  .fixed-center {
+    z-index: 200;
+    justify-content: space-between;
+    position: fixed;
+    top: 50%; /* Alterei para 50% */
+    left: 50%; /* Alterei para 50% */
+    transform: translate(-50%, -50%);
+    gap: 60px;
+    background-color: rgb(16, 14, 36);
+    color: white;
+    border: none;
+    width: 1200px;
+    height: 510px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: 1.3s;
+  }
+
+  .filha-um{
+    display: flex; /* Habilita o flexbox */
+    justify-content: center; /* Centraliza o vídeo horizontalmente */
+    align-items: center; /* Centraliza o vídeo verticalmente */
+    max-width: 600px;  /* Largura máxima da div */
+    max-height: 400px; /* Altura máxima da div */
+    overflow: hidden; /* Evita transbordamento */
+}
+  video {
+    width: 100%; /* Faz o vídeo ocupar toda a largura da div */
+    height: 90%; /* Faz o vídeo ocupar toda a altura da div */
+    object-fit: cover; /* Garante que o vídeo preencha a área sem distorção */
+    display: block;
+}
+
+  .filha-dois{
+    position: relative;
+    width: 42%;
+    height: 87%;
+  }
+
+  .filha-tres{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    height: 50px;
+    gap: 10px;
+  }
+
+  .filha-tres a{
+    background-color: dodgerblue;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .botao-x {
+    top: 0px;    /* Distância do topo */
+    right: 0px;  /* Distância da direita */
+    position: absolute;
+    width: 23px;  /* Largura do botão */
+    height: 23px; /* Altura do botão */
+    cursor: pointer;
+}
+
+.botao-x::before,
+.botao-x::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 3px; /* Espessura da linha */
+    background-color: rgb(206, 207, 226); /* Cor da linha */
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotação da primeira linha */
+}
+
+.botao-x::after {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Rotação da segunda linha */
+}

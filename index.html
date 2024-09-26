@@ -52,6 +52,62 @@
       <div class="avatar"><img src="Avatar/Avatar.jpeg" alt=""></div>
     </div>
 
+    <div id="description1" class="fixed-center">
+      <div class="filha-um">
+          <video class="meuVideo" controls  autoplay muted>
+              <source src="vid/lista de tarefas.mp4" type="video/mp4">
+              Seu navegador não suporta o vídeo.
+          </video>
+      </div>
+      <div class="filha-dois">
+          <h1>Agencia Digital</h1>
+          <div onclick="closeDescription(1)" class="botao-x"></div>
+      </div>
+      <div class="filha-tres"><a>Repositório</a><a>Projeto</a></div>
+  </div>
+
+  <div id="description2" class="fixed-center">
+    <div class="filha-um">
+        <video class="meuVideo" controls  autoplay muted>
+            <source src="vid/" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
+    </div>
+    <div class="filha-dois">
+        <h1>Agencia Digital</h1>
+        <div onclick="closeDescription(2)" class="botao-x"></div>
+    </div>
+    <div class="filha-tres"><a>Repositório</a><a>Projeto</a></div>
+</div>
+
+<div id="description3" class="fixed-center">
+  <div class="filha-um">
+      <video class="meuVideo" controls  autoplay muted>
+          <source src="vid/Agencia teste.mp4" type="video/mp4">
+          Seu navegador não suporta o vídeo.
+      </video>
+  </div>
+  <div class="filha-dois">
+      <h1>Agencia Digital</h1>
+      <div onclick="closeDescription(3)" class="botao-x"></div>
+  </div>
+  <div class="filha-tres"><a>Repositório</a><a>Projeto</a></div>
+</div>
+
+<div id="description4" class="fixed-center">
+  <div class="filha-um">
+      <video class="meuVideo" controls  autoplay muted>
+          <source src="vid/" type="video/mp4">
+          Seu navegador não suporta o vídeo.
+      </video>
+  </div>
+  <div class="filha-dois">
+      <h1>Agencia Digital</h1>
+      <div onclick="closeDescription(4)" class="botao-x"></div>
+  </div>
+  <div class="filha-tres"><a>Repositório</a><a>Projeto</a></div>
+</div>
+
     <div id="sob" style="width: 90%; margin: auto; padding-top: 100px; position: relative; top: 70px;">
       <div class="sobmim">
         <h2>Sobre mim</h2>
@@ -104,27 +160,31 @@
             <img src="icones/css-3.png" alt="">
             <img src="icones/javascript_icon_130900.png" alt="">
           </div>
-          <div class="div-filha segunda"><p>5 de setembro 2024</p> <a>Ver Mais</a> </div>
+          <div class="div-filha segunda"><p>5 de setembro 2024</p> <a  onclick="showDescription(1)">Ver Mais</a></div>
       </div>
-      
+
       <div class="div-pai">
           <div class="div-filha primeira">
             <img src="icones/javascript_icon_130900.png" alt="">
             <img src="icones/node-js.png" alt="">
           </div>
-          <div class="div-filha segunda"><p>12 de setembro 2024</p> <a>Ver Mais</a></div>
+          <div class="div-filha segunda"><p>12 de setembro 2024</p> <a onclick="showDescription(2)">Ver Mais</a></div>
       </div>
       
       <div class="div-pai">
           <div class="div-filha primeira"><img src="icones/html-5 novo.png" alt="">
             <img src="icones/css-3.png" alt=""></div>
-          <div class="div-filha segunda"><p>25 de junho 2024</p> <a>Ver Mais</a></div>
+          <div class="div-filha segunda"><p>25 de junho 2024</p> <a onclick="showDescription(3)">Ver Mais</a></div>
       </div>
 
       <div class="div-pai">
         <div class="div-filha primeira"></div>
-        <div class="div-filha segunda"><p>19 de setembro 2024</p><a>Ver Mais</a></div>
+        <div class="div-filha segunda"><p>19 de setembro 2024</p><a  onclick="showDescription(4)">Ver Mais</a></div>
     </div>
+  </div>
+
+  <div class="fixed-center">
+    Esta é uma div fixa no centro da tela.
   </div>
 
     <section id="servic"  style="padding-top: 80px; margin-top: 250px;">
