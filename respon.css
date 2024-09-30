@@ -208,7 +208,8 @@
   .fixed-center {
     margin-top: 50px;
     width: 370px;
-    height: 600px;
+    height: 650px;
+    overflow: scroll;
   }
 
   .filha-dois {
@@ -219,11 +220,13 @@
 
   .filha-um {
     position: relative;
-    bottom: 50px;
-    width: 98%;
-    height: 430px;
+    bottom: 40px;
+    width: 95%;
   }
   .meuVideo {
-    height: 70%;
+    height: 90%;
+  }
+  .filha-tres {
+    height: 0px;
   }
 }
