@@ -47,14 +47,19 @@
     height: 70%;
   }
 
+  .filha-dois {
+    overflow: scroll;
+  }
+
   .filha-dois h2 {
     font-size: 25px;
   }
   .botao-x {
     width: 22px;
     height: 22px;
-    right: -8px;
-    top: -12px;
+    right: 8px;
+    top: 8px;
+    position: fixed;
   }
 }
 
@@ -106,13 +111,14 @@
     align-items: flex-start;
     text-align: center;
     justify-content: center;
-    width: 500px;
+    width: 550px;
   }
 
   .filha-dois {
     order: -1;
     width: 98%;
     height: 400px;
+    overflow: scroll;
   }
 
   .filha-um {
@@ -123,6 +129,13 @@
   }
   .meuVideo {
     height: 95%;
+  }
+  .botao-x {
+    width: 22px;
+    height: 22px;
+    right: 8px;
+    top: 8px;
+    position: fixed;
   }
 }
 
@@ -206,33 +219,28 @@
   }
 
   .fixed-center {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 370px;
-    height: 650px;
+    height: 600px;
+    gap: 15px;
   }
 
   .filha-dois {
     order: -1;
-    width: 98%;
-    height: 400px;
-    overflow: scroll;
+    width: 100%;
+    height: 90%;
   }
 
   .filha-um {
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
     width: 95%;
   }
   .meuVideo {
-    height: 90%;
+    height: 80%;
   }
   .filha-tres {
-    height: 0px;
-  }
-  .botao-x {
-    width: 22px;
-    height: 22px;
-    right: 5px;
-    top: 5px;
+    position: relative;
+    bottom: 0px;
   }
 }
