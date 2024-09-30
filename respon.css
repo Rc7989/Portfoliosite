@@ -209,13 +209,13 @@
     margin-top: 50px;
     width: 370px;
     height: 650px;
-    overflow: scroll;
   }
 
   .filha-dois {
     order: -1;
     width: 98%;
     height: 400px;
+    overflow: scroll;
   }
 
   .filha-um {
@@ -228,5 +228,11 @@
   }
   .filha-tres {
     height: 0px;
+  }
+  .botao-x {
+    width: 22px;
+    height: 22px;
+    right: 5px;
+    top: 5px;
   }
 }

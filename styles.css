@@ -415,7 +415,6 @@ h2 {
   overflow: hidden; /* Oculta a parte que está fora da div */
   margin: auto auto;
   margin-top: 70px;
-  margin-bottom: 300px;
 }
 
 .hidden {
