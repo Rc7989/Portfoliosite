@@ -172,7 +172,12 @@
     font-size: 19px;
   }
   .sobmim p {
-    width: 95%;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .sobmim h2 {
+    font-size: 2rem;
   }
   .contact-btn {
     width: 100%;
