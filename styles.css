@@ -805,3 +805,17 @@ video {
 .botao-x::after {
   transform: translate(-50%, -50%) rotate(-45deg); /* Rotação da segunda linha */
 }
+
+#pr{
+  text-align: left; margin-bottom: 50px;
+}
+
+#pr::before{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(87, 141, 255);
+  margin-right: 10px;
+  vertical-align: 6px; /* Ajuste fino para alinhar melhor */
+}
