@@ -68,6 +68,10 @@
     font-size: 33px;
   }
 
+  .card::before,.card::after{
+    display: none;
+  }
+
   .headline p {
     font-size: 15px;
   }
