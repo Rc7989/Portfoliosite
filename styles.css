@@ -159,13 +159,13 @@ html {
 }
 
 .avatar {
-  width: 40%;
+  width: 57%;
+  cursor: pointer;
 }
 
 .avatar img {
   position: relative;
-  left: 90px;
-  border-radius: 100%;
+  left: 110px;
   width: 81%;
   transition: 0.3s linear;
 }
@@ -817,5 +817,5 @@ video {
   height: 10px;
   background-color: rgb(87, 141, 255);
   margin-right: 10px;
-  vertical-align: 6px; /* Ajuste fino para alinhar melhor */
+  vertical-align: 5px; /* Ajuste fino para alinhar melhor */
 }
