@@ -149,8 +149,7 @@ html {
   width: 90%;
   top: 100px;
   height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   animation: slide 1s ease-in-out;
 }
 
@@ -159,15 +158,20 @@ html {
 }
 
 .avatar {
-  width: 57%;
+  width: 47%;
   cursor: pointer;
 }
 
 .avatar img {
   position: relative;
-  left: 110px;
-  width: 81%;
+  left: 40px;
+  width: 90%;
   transition: 0.3s linear;
+}
+
+.avatar img:hover {
+  transform: scale(1.06);
+  transition: 0.3s ease-in-out;
 }
 
 .ola h2,
@@ -217,13 +221,32 @@ h1 {
 }
 
 .cvv {
-  top: 20px;
+  margin-top: 25px;
+  display: inline-flex;
+  gap: 50px;
+}
+.iconss{
   position: relative;
-  display: flex;
-  gap: 25px;
+  display: flex;               /* Ativa o flexbox */
+  justify-content: center;      /* Alinha os itens horizontalmente (um ao lado do outro) */
+  align-items: center; 
+  gap: 20px;
 }
 
-.cvv a {
+
+
+.iconss img{
+  cursor: pointer;
+  width: 45px;
+  transition: 0.2s ease-in-out;
+}
+
+.iconss img:hover{
+  color: white;
+  transform: scale(1.1);
+}
+
+#cv{
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   color: #f9f9f9;
@@ -233,26 +256,11 @@ h1 {
     rgba(92, 87, 230, 0.8) 0.2%,
     rgba(58, 48, 190, 0.648) 100%
   );
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 200px;
+  height: 43px;
+  text-align: center;
   border-radius: 2rem;
   transition: 0.3s;
-}
-
-.cvv a:nth-child(2) {
-  background-image: none;
-  border: 1px solid #0e23e4;
-}
-
-.cvv a:nth-child(2):hover {
-  background-color: #08115c;
-  transform: scale(0.97);
-}
-
-.cvv a:nth-child(1):hover {
-  background-color: #3343d0;
-  transform: scale(0.97);
 }
 
 .div-filha {
@@ -407,6 +415,7 @@ h3 {
   inset: 0;
   background:
     radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsla(0, 0%, 100%, 0.426), transparent 15vmin);
+    border-radius:7px;
   background-attachment: fixed;
   filter: blur(30px);
   pointer-events: none;
@@ -419,6 +428,7 @@ h3 {
   background:
     radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsl(0, 0%, 100%), transparent 15vmin),
     transparent;
+    border-radius:7px;
     filter: blur(30px);
   background-attachment: fixed;
   pointer-events: none;
@@ -671,49 +681,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contato h2 {
-  margin-bottom: 80px;
-  color: white;
-  font-size: 30px;
-}
-
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5.5rem;
-  border-radius: 0px;
-}
-
-.icons .icon img {
-  width: 65px;
-  margin-left: 0px;
-  margin-bottom: 15px;
-  border-radius: 50px;
-  padding: 5px;
-}
-
-.icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.2s;
-}
-
-.icon > img {
-  background-color: #0000008e;
-}
-
-.icon p {
-  font-size: 14px;
-}
-
-.avatar img:hover {
-  transform: scale(1.06);
-  transition: 0.3s ease-in-out;
 }
 
 .fixed-center {

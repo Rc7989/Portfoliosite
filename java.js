@@ -3,7 +3,6 @@ const nav = document.querySelector(".nav");
 const lin = document.querySelector(".lk");
 const linkk = document.querySelector(".lkk");
 const linkkk = document.querySelector(".lkkk");
-const linkkkk = document.querySelector(".lkkkk");
 const servi = document.querySelector(".servi");
 
 hamburger.addEventListener("click", () => nav.classList.toggle("active"));
@@ -15,8 +14,6 @@ linkk.addEventListener("click", () => nav.classList.toggle("active"));
 linkkk.addEventListener("click", () => nav.classList.toggle("active"));
 
 servi.addEventListener("click", () => nav.classList.toggle("active"));
-
-linkkkk.addEventListener("click", () => nav.classList.toggle("active"));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
