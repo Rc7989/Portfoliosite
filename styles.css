@@ -20,13 +20,7 @@ html {
 
 .header {
   position: fixed;
-  background-image: linear-gradient(
-    90deg,
-    rgb(87, 161, 230),
-    rgb(69, 113, 243),
-    rgb(69, 113, 243),
-    rgb(87, 161, 230)
-  );
+  background-color: #030218;
   padding-inline: 0px;
   width: 100%;
   z-index: 700;
@@ -37,9 +31,9 @@ html {
   width: 100%;
   position: absolute;
   top: 73px;
-  height: 0.05rem;
+  height: 0.15rem;
   z-index: 200;
-  background-image: linear-gradient(90deg, rgba(21, 227, 86, 0));
+  background-image: linear-gradient(45deg, rgb(16, 46, 165),rgb(155, 188, 255),rgb(16, 46, 165));
 }
 
 .pp {
@@ -201,8 +195,8 @@ h1 {
   background: linear-gradient(
     90deg,
     rgb(122, 189, 251),
-    rgba(44, 79, 255, 0.722),
-    rgba(41, 75, 249, 0.722),
+    rgb(66, 93, 228),
+    rgb(62, 91, 232),
     rgb(122, 189, 251)
   );
   background-size: 400% 100%;
@@ -247,6 +241,8 @@ h1 {
 }
 
 #cv{
+  display: inline-block;
+  position: relative;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   color: #f9f9f9;
@@ -256,11 +252,37 @@ h1 {
     rgba(92, 87, 230, 0.8) 0.2%,
     rgba(58, 48, 190, 0.648) 100%
   );
-  width: 200px;
+  width: 160px;
   height: 43px;
   text-align: center;
   border-radius: 2rem;
-  transition: 0.3s;
+  overflow: hidden;
+  transition: 1s;
+}
+
+#cv .icon {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  transition: bottom 0.5s ease, opacity 0.3s ease;
+  opacity: 0;
+  width: 22px;
+}
+
+#cv .text {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+#cv:hover .icon {
+  bottom: 25%;
+  opacity: 1;
+}
+
+#cv:hover .text {
+  transform: translateY(-150%);
 }
 
 .div-filha {
@@ -668,7 +690,7 @@ body::-webkit-scrollbar-track {
   padding: 0px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #569fe6; /* cor da alça da barra de rolagem */
+  background-color: #3e68db; /* cor da alça da barra de rolagem */
   border-radius: 0px; /* borda arredondada da alça */
 }
 
